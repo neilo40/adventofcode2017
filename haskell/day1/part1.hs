@@ -31,7 +31,7 @@ main = do
   print $ sum firstNums -- could also write print (sum, firstNums)
 
 -- read converts string or list of char to int
--- [x] turns single char x into list if char/string
+-- [x] turns single char x into list of char/string
 -- take x from each elem of chars, except where x = \n
 readInts :: String -> [Int]
 readInts chars = [read [x] | x <- chars, x /= '\n']
